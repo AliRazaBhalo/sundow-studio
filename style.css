@@ -1,0 +1,135 @@
+@font-face {
+    font-family: vau-light;
+    src: url(assets/fonts/NeueHaasDisplay-light.ttf);
+}
+@font-face {
+    font-family: vau-bold;
+    src: url(assets/fonts/NeueHaasDisplayBoldItalic.ttf);
+}
+* {
+    margin:0;
+    padding:0;
+    font-family : sans-serif;
+    box-sizing : border-box;
+    background-color: #EFEAE3;
+}
+
+
+/* ================= NavBar Start ================ */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw;
+}
+
+#logo{
+    cursor: pointer;
+}
+
+#nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    font-size: 1.2rem;
+}
+
+#nav-links h4 {
+    border: 1px solid rgba(11, 5, 0, .2);
+    padding: 0.625em 1.5em;
+    border-radius: 100vw;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-size: 18px;
+    font-weight: 6;
+    transition: all .5s ease;
+
+}
+
+#nav-links h4::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    bottom: -100%;
+    /* for bottom border uncomment */
+    /* border-radius: 100vw; */
+    left: 0;
+    transition: all .5s ease;
+}
+
+#nav-links h4:hover::after {
+    bottom: 0;
+    /* for bottom border uncomment */
+    /* border-radius: 100vw; */
+
+}
+
+#nav-links a {
+    text-decoration: none;
+    color: #0b0500;
+}
+
+#nav-links h4:hover a {
+    color: #fff;
+    position: relative;
+    z-index: 9;
+    background-color: transparent;
+}
+ /* ================= NavBar End ================ */
+
+ /* ================= Hero Start ================ */
+
+
+ #hero{
+   
+  
+}
+
+#hero-content{
+    min-height: 70vh;
+    width: 100%;
+    /* background-color: orange; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 3rem 1.5rem;
+    border-bottom: 1px solid #0b0500;
+}
+#hero #left{
+    width: 25vw;
+    font-size: 4vh;
+    color : #0b0500;
+    /* line-height: 4vh; */
+    text-align: center;
+    font-family: vau-light;
+
+}
+#hero #right{
+    /* width: 70vw; */
+    font-size: 9vh;
+    text-align: right;
+    font-family: vau-dark;
+    font-weight: 900;
+    line-height:20vh;
+    /* padding-bottom: 2rem; */
+}
+
+#video{
+    height: 100%;
+    width: 100vw;
+}
+ video{
+    width: 100%;
+    /* height: 80vh; */
+    border-radius: 20px;
+    /* margin: auto; */
+    margin-top: 3vw;
+    /* margin: 4vw 2vw; */
+    
+}
+
+
+
